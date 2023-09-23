@@ -10,7 +10,7 @@ Vue.config.productionTip = false
 
 // const BACKEND_PORT = process.env.BACKEND_PORT === null ? '' : `:${process.env.BACKEND_PORT}`
 const BACKEND_PORT = `:8181`
-const BACKEND_DOMAIN = `http://localhost`
+const BACKEND_DOMAIN = `https://port-0-frienselor-be-4fju66f2clmt7nvai.sel5.cloudtype.app`
 axios.defaults.baseURL = `${BACKEND_DOMAIN}${BACKEND_PORT}`
 
 /* eslint-disable no-new */

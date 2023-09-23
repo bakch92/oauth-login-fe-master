@@ -1,10 +1,10 @@
-const BACKEND_PORT = process.env.BACKEND_PORT === null ? '' : `:${process.env.BACKEND_PORT}`
-// const BACKEND_PORT = '8181'
-const BACKEND_URL = `${location.protocol}//${location.hostname}${BACKEND_PORT}`
-// const BACKEND_URL = `http://ec2-54-180-154-36.ap-northeast-2.compute.amazonaws.com:${BACKEND_PORT}`
-const FRONTEND_PORT = process.env.FRONTEND_PORT === null ? '' : `:${process.env.FRONTEND_PORT}`
-// const REDIRECT_URI = `http://ec2-13-125-98-133.ap-northeast-2.compute.amazonaws.com:80/oauth/redirect`
-const REDIRECT_URI = `${location.protocol}//${location.hostname}${FRONTEND_PORT}/oauth/redirect`
+// const BACKEND_PORT = process.env.BACKEND_PORT === null ? '' : `:${process.env.BACKEND_PORT}`
+const BACKEND_PORT = '8181'
+// const BACKEND_URL = `${location.protocol}//${location.hostname}${BACKEND_PORT}`
+const BACKEND_URL = `https://port-0-frienselor-be-4fju66f2clmt7nvai.sel5.cloudtype.app:${BACKEND_PORT}`
+// const FRONTEND_PORT = process.env.FRONTEND_PORT === null ? '' : `:${process.env.FRONTEND_PORT}`
+const REDIRECT_URI = `https://web-oauth-login-fe-master-iciy2almw45lyr.sel5.cloudtype.app:80/oauth/redirect`
+// const REDIRECT_URI = `${location.protocol}//${location.hostname}${FRONTEND_PORT}/oauth/redirect`
 
 export default {
   getSocialLoginUrl (socialType) {
