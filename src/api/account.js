@@ -2,7 +2,7 @@ import req from './req-wrapper'
 
 const ACCOUNT_URI = {
   LOGIN: '/auth/login',
-  USER: '/users'
+  USER: '/client-user/users'
 }
 
 export default {
